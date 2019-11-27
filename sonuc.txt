@@ -1,2 +1,3 @@
 Basınc Düsümü Sonucu: 375000.0 N/m2
 Genlesme Miktarı Sonucu: 0.048 m
+Basınc Düsümü Sonucu: 425700.0 N/m2
