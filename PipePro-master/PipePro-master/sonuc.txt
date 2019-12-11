@@ -1,8 +1,0 @@
-Basınc Düsümü Sonucu: 375000.0 N/m2
-Genlesme Miktarı Sonucu: 0.048 m
-Basınc Düsümü Sonucu: 425700.0 N/m2
-Genlesme Miktarı Sonucu: 0.0166253 m
-Sıvının Debisi: 2.0666666 m³/s
-Oluşan Isı Kaybı -1.0 W / m
-Sıvının Debisi: 0.041666668 m³/s
-Oluşan Isı Kaybı -24.0 W / m

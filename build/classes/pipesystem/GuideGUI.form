@@ -31,30 +31,18 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="119" max="-2" attributes="0"/>
-              <EmptySpace pref="58" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jLabel1" max="32767" attributes="0"/>
-                  <Component id="jTextField2" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="195" max="-2" attributes="0"/>
+              <EmptySpace pref="521" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="117" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="jTextField2" min="-2" pref="111" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane1" min="-2" pref="235" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="182" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="40" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="390" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -69,39 +57,33 @@
       <SubComponents>
         <Component class="javax.swing.JList" name="jList1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-                <StringItem index="4" value="Item 5"/>
+              <StringArray count="14">
+                <StringItem index="0" value="Genle&#x15f;me Katsay&#x131;s&#x131;"/>
+                <StringItem index="1" value="S&#x131;cakl&#x131;k Fark&#x131;"/>
+                <StringItem index="2" value="Hat Uzunlu&#x11f;u"/>
+                <StringItem index="3" value="Genle&#x15f;me Miktar&#x131;"/>
+                <StringItem index="4" value="Is&#x131; &#x130;htiyac&#x131;"/>
+                <StringItem index="5" value="S&#x131;v&#x131;n&#x131;n &#xd6;zk&#xfc;tlesi"/>
+                <StringItem index="6" value="S&#x131;v&#x131;n&#x131;n &#xd6;zg&#xfc;l Is&#x131;s&#x131;"/>
+                <StringItem index="7" value="S&#x131;v&#x131; Debisi"/>
+                <StringItem index="8" value="S&#xfc;rt&#xfc;nme Katsay&#x131;s&#x131;"/>
+                <StringItem index="9" value="Tahmini Boru &#x130;&#xe7; &#xc7;ap&#x131;"/>
+                <StringItem index="10" value="Ak&#x131;&#x15f;kan H&#x131;z&#x131;"/>
+                <StringItem index="11" value="Ak&#x131;&#x15f;kan S&#x131;cakl&#x131;&#x11f;&#x131;"/>
+                <StringItem index="12" value="D&#x131;&#x15f; Ortam S&#x131;cakl&#x131;&#x11f;&#x131;"/>
+                <StringItem index="13" value="Is&#x131;l &#x130;letkenlik Katsay&#x131;s&#x131;"/>
               </StringArray>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jList1MouseClicked"/>
-          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Text 2"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pipesystem/1.png"/>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-      </AuxValues>
-    </Component>
   </SubComponents>
 </Form>
