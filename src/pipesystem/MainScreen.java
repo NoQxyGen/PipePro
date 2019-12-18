@@ -34,8 +34,6 @@ public class MainScreen extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         genlesmeKatsayisiButton = new javax.swing.JButton();
-        sicaklikFarkiButton = new javax.swing.JButton();
-        hatUzunluguButton = new javax.swing.JButton();
         genlesmeHesapla = new javax.swing.JButton();
         jTextField7 = new javax.swing.JTextField();
         hatUzunlugu = new javax.swing.JTextField();
@@ -63,6 +61,7 @@ public class MainScreen extends javax.swing.JFrame {
         sicaklik_farki = new javax.swing.JTextPane();
         jScrollPane11 = new javax.swing.JScrollPane();
         debi = new javax.swing.JTextPane();
+        genlesmeKatsayisiButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
@@ -83,6 +82,7 @@ public class MainScreen extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         basincDusumu = new javax.swing.JTextPane();
         jTextField10 = new javax.swing.JTextField();
+        genlesmeKatsayisiButton2 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
@@ -97,13 +97,17 @@ public class MainScreen extends javax.swing.JFrame {
         jTextField19 = new javax.swing.JTextField();
         jScrollPane17 = new javax.swing.JScrollPane();
         isi_kaybi = new javax.swing.JTextPane();
+        genlesmeKatsayisiButton3 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
+        genlesmeKatsayisiButton4 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
+        genlesmeKatsayisiButton5 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("PipePro");
@@ -116,20 +120,6 @@ public class MainScreen extends javax.swing.JFrame {
         genlesmeKatsayisiButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 genlesmeKatsayisiButtonActionPerformed(evt);
-            }
-        });
-
-        sicaklikFarkiButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        sicaklikFarkiButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sicaklikFarkiButtonActionPerformed(evt);
-            }
-        });
-
-        hatUzunluguButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        hatUzunluguButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hatUzunluguButtonActionPerformed(evt);
             }
         });
 
@@ -204,17 +194,13 @@ public class MainScreen extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(genlesmeKatsayisiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(500, 500, 500)
+                        .addGap(393, 393, 393)
                         .addComponent(genlesmeMiktari, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(genlesmeKatsayisiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sicaklikFarkiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hatUzunluguButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -235,23 +221,18 @@ public class MainScreen extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(comboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(27, 27, 27))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(genlesmeKatsayisiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(5, 5, 5)
-                                .addComponent(sicaklikFarkiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(hatUzunluguButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(comboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
+                        .addComponent(comboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(105, 105, 105)
                         .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(genlesmeMiktari, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -263,12 +244,13 @@ public class MainScreen extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(sicaklikFarki, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
+                        .addGap(5, 5, 5)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hatUzunlugu, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(10, 10, 10)
-                        .addComponent(genlesmeHesapla, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(genlesmeHesapla, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Genleşme Hesabı", jPanel2);
@@ -330,11 +312,6 @@ public class MainScreen extends javax.swing.JFrame {
         jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField17.setText(" Sıvı Debisi (m³/s):");
         jTextField17.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jTextField17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField17ActionPerformed(evt);
-            }
-        });
 
         isi_ihtiyaci.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jScrollPane7.setViewportView(isi_ihtiyaci);
@@ -352,46 +329,58 @@ public class MainScreen extends javax.swing.JFrame {
         debi.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jScrollPane11.setViewportView(debi);
 
+        genlesmeKatsayisiButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        genlesmeKatsayisiButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genlesmeKatsayisiButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(jTextField16))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Debi_hesapla, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-                    .addComponent(jScrollPane7)
-                    .addComponent(jScrollPane10)
-                    .addComponent(jScrollPane9)
-                    .addComponent(jScrollPane8))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                    .addComponent(jScrollPane11))
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(genlesmeKatsayisiButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField11)
+                            .addComponent(jTextField12)
+                            .addComponent(jTextField15, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Debi_hesapla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane7)
+                            .addComponent(jScrollPane10)
+                            .addComponent(jScrollPane9)
+                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField17)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane7)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(5, 5, 5)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(5, 5, 5)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane9))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(5, 5, 5)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -400,8 +389,8 @@ public class MainScreen extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane11)
-                    .addComponent(Debi_hesapla, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
-                .addContainerGap(107, Short.MAX_VALUE))
+                    .addComponent(Debi_hesapla, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(91, 91, 91))
         );
 
         jTabbedPane1.addTab("Debi Hesabı", jPanel4);
@@ -478,17 +467,25 @@ public class MainScreen extends javax.swing.JFrame {
         jTextField10.setText("Basınç Düşümü (N/m2):");
         jTextField10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        genlesmeKatsayisiButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        genlesmeKatsayisiButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genlesmeKatsayisiButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(genlesmeKatsayisiButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(300, 300, 300)
+                        .addGap(242, 242, 242)
                         .addComponent(capHesapla, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -514,12 +511,14 @@ public class MainScreen extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -547,7 +546,7 @@ public class MainScreen extends javax.swing.JFrame {
                         .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Çap Hesabı", jPanel1);
@@ -604,37 +603,50 @@ public class MainScreen extends javax.swing.JFrame {
         isi_kaybi.setPreferredSize(new java.awt.Dimension(6, 20));
         jScrollPane17.setViewportView(isi_kaybi);
 
+        genlesmeKatsayisiButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        genlesmeKatsayisiButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genlesmeKatsayisiButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
-                .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
-                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
-                .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(353, 353, 353)
-                .addComponent(isi_kaybik, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
-                .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(genlesmeKatsayisiButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(308, 308, 308)
+                                .addComponent(isi_kaybik, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(46, 46, 46)
+                                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(49, 49, 49)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(45, 45, 45))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -650,42 +662,70 @@ public class MainScreen extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(isi_kaybik, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(122, 122, 122))
         );
 
         jTabbedPane1.addTab("Isı Kaybı Hesabı", jPanel3);
+
+        genlesmeKatsayisiButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        genlesmeKatsayisiButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genlesmeKatsayisiButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 809, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(704, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(354, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Atık Su Hesabı", jPanel5);
+
+        genlesmeKatsayisiButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        genlesmeKatsayisiButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genlesmeKatsayisiButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 809, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(704, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(genlesmeKatsayisiButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(354, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Depo Hesabı", jPanel6);
 
-        jMenu1.setText("File");
+        jMenu1.setText("Dosya");
+        jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/output-onlinepngtools.png"))); // NOI18N
-        jMenuItem1.setText("Exit");
+        jMenuItem1.setText("Çıkış");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -695,16 +735,26 @@ public class MainScreen extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Help");
+        jMenu2.setText("Yardım");
+        jMenu2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem2.setText("Guide");
+        jMenuItem2.setText("Rehber");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
             }
         });
         jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem3.setText("Hakkında");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
 
         jMenuBar1.add(jMenu2);
 
@@ -714,7 +764,7 @@ public class MainScreen extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 966, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 913, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -797,16 +847,6 @@ public class MainScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_genlesmeMiktariActionPerformed
 
-    private void sicaklikFarkiButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sicaklikFarkiButtonActionPerformed
-        // TODO add your handling code here:
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_sicaklikFarkiButtonActionPerformed
-
-    private void hatUzunluguButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hatUzunluguButtonActionPerformed
-        // TODO add your handling code here:
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_hatUzunluguButtonActionPerformed
-
     private void capHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_capHesaplaActionPerformed
         float sonuc2 = Float.parseFloat(surtunmeKatsayisi.getText())*Float.parseFloat(hattinUzunlugu2.getText())
         *Float.parseFloat(akiskanHizi.getText())*Float.parseFloat(akiskanHizi.getText())*Float.parseFloat(ozkutle.getText())/Float.parseFloat(icCap.getText())*2;
@@ -869,34 +909,53 @@ public class MainScreen extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Debi_hesaplaActionPerformed
 
-    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField17ActionPerformed
+    private void genlesmeKatsayisiButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton1ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_genlesmeKatsayisiButton1ActionPerformed
+
+    private void genlesmeKatsayisiButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton2ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_genlesmeKatsayisiButton2ActionPerformed
+
+    private void genlesmeKatsayisiButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton4ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_genlesmeKatsayisiButton4ActionPerformed
+
+    private void genlesmeKatsayisiButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton5ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_genlesmeKatsayisiButton5ActionPerformed
+
+    private void genlesmeKatsayisiButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton3ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_genlesmeKatsayisiButton3ActionPerformed
 
     private void isi_kaybikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isi_kaybikActionPerformed
         float sonuc6 = Float.parseFloat(iletken_katsayi.getText())* (Float.parseFloat(akiskan.getText())-Float.parseFloat(dis_ortam.getText()));
         String sonuc7 = Float.toString(sonuc6);
         isi_kaybi.setText(sonuc7);
-        
+
         try {
             FileWriter writer = new FileWriter("sonuc.txt", true);
             writer.write("Oluşan Isı Kaybı " + sonuc6 + " W / m");
             writer.write(System.getProperty("line.separator"));
             writer.close();
-        } 
-        
+        }
+
         catch (Exception e) {
-            
+
             JOptionPane.showMessageDialog(rootPane, "Error");
         }
     }//GEN-LAST:event_isi_kaybikActionPerformed
 
     private void dis_ortamKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_dis_ortamKeyTyped
-            char enter = evt.getKeyChar();
-            if(!(Character.isDigit(enter))){
-                evt.consume();
-            }
+        if(!Character.isDigit(evt.getKeyChar())){
+            evt.consume();
+        }
     }//GEN-LAST:event_dis_ortamKeyTyped
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        new About().setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -945,9 +1004,13 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JButton genlesmeHesapla;
     private javax.swing.JTextField genlesmeKatsayisi;
     private javax.swing.JButton genlesmeKatsayisiButton;
+    private javax.swing.JButton genlesmeKatsayisiButton1;
+    private javax.swing.JButton genlesmeKatsayisiButton2;
+    private javax.swing.JButton genlesmeKatsayisiButton3;
+    private javax.swing.JButton genlesmeKatsayisiButton4;
+    private javax.swing.JButton genlesmeKatsayisiButton5;
     private javax.swing.JTextField genlesmeMiktari;
     private javax.swing.JTextField hatUzunlugu;
-    private javax.swing.JButton hatUzunluguButton;
     private javax.swing.JTextPane hattinUzunlugu2;
     private javax.swing.JTextPane icCap;
     private javax.swing.JTextPane iletken_katsayi;
@@ -959,6 +1022,7 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1002,7 +1066,6 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField9;
     private javax.swing.JTextPane ozkutle;
     private javax.swing.JTextField sicaklikFarki;
-    private javax.swing.JButton sicaklikFarkiButton;
     private javax.swing.JTextPane sicaklik_farki;
     private javax.swing.JTextPane surtunmeKatsayisi;
     private javax.swing.JTextPane özgül_isi;

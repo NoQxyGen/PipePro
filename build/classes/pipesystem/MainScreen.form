@@ -6,7 +6,10 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="File"/>
+            <Property name="text" type="java.lang.String" value="Dosya"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
@@ -17,7 +20,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/pipesystem/output-onlinepngtools.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Exit"/>
+                <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
@@ -27,7 +30,10 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Help"/>
+            <Property name="text" type="java.lang.String" value="Yard&#x131;m"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
@@ -35,10 +41,21 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+G"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Guide"/>
+                <Property name="text" type="java.lang.String" value="Rehber"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+H"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Hakk&#x131;nda"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -73,7 +90,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jTabbedPane1" min="-2" pref="966" max="-2" attributes="0"/>
+          <Component id="jTabbedPane1" min="-2" pref="913" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -106,19 +123,14 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="500" pref="500" max="-2" attributes="0"/>
+                          <Component id="genlesmeKatsayisiButton" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="393" max="-2" attributes="0"/>
                               <Component id="genlesmeMiktari" min="-2" pref="230" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="genlesmeKatsayisiButton" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
-                                  <Component id="sicaklikFarkiButton" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
-                                  <Component id="hatUzunluguButton" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jTextField2" min="-2" pref="230" max="-2" attributes="0"/>
@@ -147,32 +159,25 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="genlesmeKatsayisiButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-                                      <Component id="sicaklikFarkiButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                      <Component id="hatUzunluguButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="comboBox1" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="comboBox1" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
                               <Component id="jTextField7" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                               <Component id="genlesmeMiktari" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jTextField2" min="-2" pref="40" max="-2" attributes="0"/>
                                   <Component id="genlesmeKatsayisi" min="-2" pref="40" max="-2" attributes="0"/>
@@ -182,7 +187,7 @@
                                   <Component id="jTextField6" min="-2" pref="40" max="-2" attributes="0"/>
                                   <Component id="sicaklikFarki" min="-2" pref="40" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jTextField5" min="-2" pref="40" max="-2" attributes="0"/>
                                   <Component id="hatUzunlugu" min="-2" pref="40" max="-2" attributes="0"/>
@@ -191,6 +196,7 @@
                               <Component id="genlesmeHesapla" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -204,26 +210,6 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genlesmeKatsayisiButtonActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="sicaklikFarkiButton">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/pipesystem/questionmark25x25.jpg"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sicaklikFarkiButtonActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="hatUzunluguButton">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/pipesystem/questionmark25x25.jpg"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hatUzunluguButtonActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="genlesmeHesapla">
@@ -377,52 +363,59 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField11" pref="230" max="32767" attributes="0"/>
-                          <Component id="jTextField12" pref="230" max="32767" attributes="0"/>
-                          <Component id="jTextField15" alignment="1" pref="230" max="32767" attributes="0"/>
-                          <Component id="jTextField16" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="genlesmeKatsayisiButton1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jTextField11" max="32767" attributes="0"/>
+                                  <Component id="jTextField12" max="32767" attributes="0"/>
+                                  <Component id="jTextField15" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextField16" alignment="0" min="-2" pref="230" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="Debi_hesapla" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane7" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane10" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane9" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane8" min="-2" pref="130" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jTextField17" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane11" min="-2" pref="171" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="Debi_hesapla" pref="130" max="32767" attributes="0"/>
-                          <Component id="jScrollPane7" max="32767" attributes="0"/>
-                          <Component id="jScrollPane10" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jScrollPane9" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jScrollPane8" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField17" pref="171" max="32767" attributes="0"/>
-                          <Component id="jScrollPane11" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="152" max="32767" attributes="0"/>
+                      <EmptySpace pref="177" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton1" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jScrollPane7" max="32767" attributes="0"/>
-                          <Component id="jTextField11" pref="40" max="32767" attributes="0"/>
+                          <Component id="jTextField11" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jTextField12" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="jScrollPane8" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jTextField15" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="jScrollPane9" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                               <Component id="jTextField16" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                               <Component id="jTextField17" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
@@ -431,9 +424,9 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jScrollPane11" max="32767" attributes="0"/>
-                          <Component id="Debi_hesapla" pref="40" max="32767" attributes="0"/>
+                          <Component id="Debi_hesapla" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="107" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -536,9 +529,6 @@
                   </Border>
                 </Property>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField17ActionPerformed"/>
-              </Events>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane7">
               <AuxValues>
@@ -621,6 +611,16 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Component class="javax.swing.JButton" name="genlesmeKatsayisiButton1">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/pipesystem/questionmark25x25.jpg"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genlesmeKatsayisiButton1ActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel1">
@@ -636,13 +636,14 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="300" pref="300" max="-2" attributes="0"/>
+                          <Component id="genlesmeKatsayisiButton2" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="242" max="-2" attributes="0"/>
                               <Component id="capHesapla" min="-2" pref="120" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jTextField1" min="-2" pref="230" max="-2" attributes="0"/>
@@ -677,16 +678,18 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="82" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton2" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jTextField1" min="-2" pref="40" max="-2" attributes="0"/>
                                   <Component id="jScrollPane2" min="-2" pref="40" max="-2" attributes="0"/>
@@ -714,13 +717,13 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="capHesapla" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="jTextField10" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jScrollPane1" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="66" max="32767" attributes="0"/>
+                      <EmptySpace pref="41" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -929,6 +932,16 @@
                 </Property>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="genlesmeKatsayisiButton2">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/pipesystem/questionmark25x25.jpg"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genlesmeKatsayisiButton2ActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel3">
@@ -944,37 +957,48 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-                      <Component id="jTextField13" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
-                      <Component id="jScrollPane12" min="-2" pref="130" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-                      <Component id="jTextField14" min="-2" pref="262" max="-2" attributes="0"/>
-                      <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
-                      <Component id="jScrollPane15" min="-2" pref="130" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-                      <Component id="jTextField18" min="-2" pref="262" max="-2" attributes="0"/>
-                      <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
-                      <Component id="jScrollPane16" min="-2" pref="130" max="-2" attributes="0"/>
-                      <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
-                      <Component id="jTextField19" min="-2" pref="262" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="353" pref="353" max="-2" attributes="0"/>
-                      <Component id="isi_kaybik" min="-2" pref="130" max="-2" attributes="0"/>
-                      <EmptySpace min="49" pref="49" max="-2" attributes="0"/>
-                      <Component id="jScrollPane17" min="-2" pref="260" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="genlesmeKatsayisiButton3" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTextField13" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
+                              <Component id="jScrollPane12" min="-2" pref="130" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTextField14" min="-2" pref="262" max="-2" attributes="0"/>
+                              <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
+                              <Component id="jScrollPane15" min="-2" pref="130" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="308" max="-2" attributes="0"/>
+                                      <Component id="isi_kaybik" min="-2" pref="130" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jTextField18" min="-2" pref="262" max="-2" attributes="0"/>
+                                      <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane16" min="-2" pref="130" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTextField19" min="-2" pref="227" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane17" min="-2" pref="227" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton3" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jTextField13" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="jScrollPane12" min="-2" pref="40" max="-2" attributes="0"/>
@@ -995,6 +1019,7 @@
                           <Component id="isi_kaybik" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="jScrollPane17" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1143,6 +1168,16 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Component class="javax.swing.JButton" name="genlesmeKatsayisiButton3">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/pipesystem/questionmark25x25.jpg"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genlesmeKatsayisiButton3ActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel5">
@@ -1157,15 +1192,35 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="809" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton4" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace pref="704" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="401" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton4" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace pref="354" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="genlesmeKatsayisiButton4">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/pipesystem/questionmark25x25.jpg"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genlesmeKatsayisiButton4ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel6">
           <Constraints>
@@ -1179,15 +1234,35 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="809" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton5" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace pref="704" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="401" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="genlesmeKatsayisiButton5" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace pref="354" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="genlesmeKatsayisiButton5">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/pipesystem/questionmark25x25.jpg"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genlesmeKatsayisiButton5ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
         </Container>
       </SubComponents>
     </Container>
