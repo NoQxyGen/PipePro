@@ -44,7 +44,7 @@ public class GuideGUI extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Genleşme Katsayısı", "Sıcaklık Farkı", "Hat Uzunluğu", "Genleşme Miktarı", "Isı İhtiyacı", "Sıvının Özkütlesi", "Sıvının Özgül Isısı", "Sıvı Debisi", "Sürtünme Katsayısı", "Tahmini Boru İç Çapı", "Akışkan Hızı", "Akışkan Sıcaklığı", "Dış Ortam Sıcaklığı", "Isıl İletkenlik Katsayısı" };
+            String[] strings = { "Genleşme Katsayısı", "Sıcaklık Farkı", "Hat Uzunluğu", "Isı İhtiyacı", "Sıvının Özkütlesi", "Sıvının Özgül Isısı", "Sıvı Debisi", "Sürtünme Katsayısı", "Tahmini Boru İç Çapı", "Akışkan Hızı", "Akışkan Sıcaklığı", "Dış Ortam Sıcaklığı", "Isıl İletkenlik Katsayısı" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -97,46 +97,44 @@ public class GuideGUI extends javax.swing.JFrame {
         
         String secilen = jList1.getSelectedValue();
         if(secilen.equals("Genleşme Katsayısı")){
-            bilgiText.setText("Genleşme Katsayısı Bilgi");
+            bilgiText.setText("Genleşme katsayısı, birim miktardaki bir maddenin uzunluğunda, yüzey alanında ya da hacminde meydana gelen genleşmeyi belirlemek üzere kullanılan ölçüdür.");
         }
         else if(secilen.equals("Sıcaklık Farkı")){
-            bilgiText.setText("Sıcaklık Farkı Bilgi");
+            bilgiText.setText("Akışkan sıvının sıcaklığı ile hattın montajının yapıldığı andaki sıcaklığının farkına denir. (Tsıvı–Tdış)");
         }
         else if(secilen.equals("Hat Uzunluğu")){
-            bilgiText.setText("Hat Uzunluğu Bilgi");
+            bilgiText.setText("Genleşmeye maruz kalan hattın uzunluğuna denir.");
         }
-        else if(secilen.equals("Genleşme Miktarı")){
-            bilgiText.setText("Genleşme Miktarı Bilgi");
-        }
+        
         else if(secilen.equals("Isı İhtiyacı")){
-            bilgiText.setText("Isı İhtiyacı Bilgi");
+            bilgiText.setText("Isıtma sisteminden istenilen ısı ihtiyacı miktarına denir.");
         }
         else if(secilen.equals("Sıvının Özkütlesi")){
-            bilgiText.setText("Sıvının Özkütlesi Bilgi");
+            bilgiText.setText("Bir maddenin birim hacminin kütlesine özkütle denir.");
         }
         else if(secilen.equals("Sıvının Özgül Isısı")){
-            bilgiText.setText("Sıvının Özgül Isısı Bilgi");
+            bilgiText.setText("Özgül ısı bir saf maddenin birim kütlesinin (1 kg ya da 1 g) sıcaklığını 1 °C (ya da 1 K) artırmak için verilmesi gereken ısı miktarına denir.");
         }
         else if(secilen.equals("Sıvı Debisi")){
-            bilgiText.setText("Sıvı Debisi Bilgi");
+            bilgiText.setText("Borudan birim zamanda geçen akışkanın miktarına sıvı debisi denir.");
         }
         else if(secilen.equals("Sürtünme Katsayısı")){
-            bilgiText.setText("Sürtünme Katsayısı Bilgi");
+            bilgiText.setText("İki cisim arasındaki sürtünme kuvvetinin iki cismi birbirine bastıran kuvvete oranına sürtünme katsayısı denir.");
         }
         else if(secilen.equals("Tahmini Boru İç Çapı")){
-            bilgiText.setText("Tahmini Boru İç Çapı Bilgi");
+            bilgiText.setText("Sıvının taşınacağı borunun belirlenen iç çapına denir.");
         }
         else if(secilen.equals("Akışkan Hızı")){
-            bilgiText.setText("Akışkan Hızı Bilgi");
+            bilgiText.setText("Verilen bir kesit alandan birim zamanda geçen sıvı miktarına denir. ");
         }
         else if(secilen.equals("Akışkan Sıcaklığı")){
-            bilgiText.setText("Akışkan Sıcaklığı Bilgi");
+            bilgiText.setText("Boruda taşınacak olan sıvının sıcaklığına denir.");
         }
         else if(secilen.equals("Dış Ortam Sıcaklığı")){
-            bilgiText.setText("Dış Ortam Sıcaklığı Bilgi");
+            bilgiText.setText("Borunun yerleştirileceği ortamın sıcaklığına denir.");
         }
         else if(secilen.equals("Isıl İletkenlik Katsayısı")){
-            bilgiText.setText("Isıl İletkenlik Katsayısı Bilgi");
+            bilgiText.setText("Isı iletim katsayısı, bir maddenin bir metre uzaklığındaki bir noktasının sıcaklığını, 1 Kelvin artırmak için gerekli güç değerine denir.");
         }
         
     }//GEN-LAST:event_jList1MouseClicked

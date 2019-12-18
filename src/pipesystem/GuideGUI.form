@@ -69,21 +69,20 @@
               <Font name="Segoe UI" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="14">
+              <StringArray count="13">
                 <StringItem index="0" value="Genle&#x15f;me Katsay&#x131;s&#x131;"/>
                 <StringItem index="1" value="S&#x131;cakl&#x131;k Fark&#x131;"/>
                 <StringItem index="2" value="Hat Uzunlu&#x11f;u"/>
-                <StringItem index="3" value="Genle&#x15f;me Miktar&#x131;"/>
-                <StringItem index="4" value="Is&#x131; &#x130;htiyac&#x131;"/>
-                <StringItem index="5" value="S&#x131;v&#x131;n&#x131;n &#xd6;zk&#xfc;tlesi"/>
-                <StringItem index="6" value="S&#x131;v&#x131;n&#x131;n &#xd6;zg&#xfc;l Is&#x131;s&#x131;"/>
-                <StringItem index="7" value="S&#x131;v&#x131; Debisi"/>
-                <StringItem index="8" value="S&#xfc;rt&#xfc;nme Katsay&#x131;s&#x131;"/>
-                <StringItem index="9" value="Tahmini Boru &#x130;&#xe7; &#xc7;ap&#x131;"/>
-                <StringItem index="10" value="Ak&#x131;&#x15f;kan H&#x131;z&#x131;"/>
-                <StringItem index="11" value="Ak&#x131;&#x15f;kan S&#x131;cakl&#x131;&#x11f;&#x131;"/>
-                <StringItem index="12" value="D&#x131;&#x15f; Ortam S&#x131;cakl&#x131;&#x11f;&#x131;"/>
-                <StringItem index="13" value="Is&#x131;l &#x130;letkenlik Katsay&#x131;s&#x131;"/>
+                <StringItem index="3" value="Is&#x131; &#x130;htiyac&#x131;"/>
+                <StringItem index="4" value="S&#x131;v&#x131;n&#x131;n &#xd6;zk&#xfc;tlesi"/>
+                <StringItem index="5" value="S&#x131;v&#x131;n&#x131;n &#xd6;zg&#xfc;l Is&#x131;s&#x131;"/>
+                <StringItem index="6" value="S&#x131;v&#x131; Debisi"/>
+                <StringItem index="7" value="S&#xfc;rt&#xfc;nme Katsay&#x131;s&#x131;"/>
+                <StringItem index="8" value="Tahmini Boru &#x130;&#xe7; &#xc7;ap&#x131;"/>
+                <StringItem index="9" value="Ak&#x131;&#x15f;kan H&#x131;z&#x131;"/>
+                <StringItem index="10" value="Ak&#x131;&#x15f;kan S&#x131;cakl&#x131;&#x11f;&#x131;"/>
+                <StringItem index="11" value="D&#x131;&#x15f; Ortam S&#x131;cakl&#x131;&#x11f;&#x131;"/>
+                <StringItem index="12" value="Is&#x131;l &#x130;letkenlik Katsay&#x131;s&#x131;"/>
               </StringArray>
             </Property>
           </Properties>
