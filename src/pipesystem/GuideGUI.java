@@ -44,7 +44,7 @@ public class GuideGUI extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Genleşme Katsayısı", "Sıcaklık Farkı", "Hat Uzunluğu", "Isı İhtiyacı", "Sıvının Özkütlesi", "Sıvının Özgül Isısı", "Sıvı Debisi", "Sürtünme Katsayısı", "Tahmini Boru İç Çapı", "Akışkan Hızı", "Akışkan Sıcaklığı", "Dış Ortam Sıcaklığı", "Isıl İletkenlik Katsayısı" };
+            String[] strings = { "Genleşme Katsayısı", "Sıcaklık Farkı", "Hat Uzunluğu", "Isı İhtiyacı", "Sıvının Özkütlesi", "Sıvının Özgül Isısı", "Sıvı Debisi", "Sürtünme Katsayısı", "Tahmini Boru İç Çapı", "Akışkan Hızı", "Akışkan Sıcaklığı", "Dış Ortam Sıcaklığı", "Isıl İletkenlik Katsayısı", "Günlük Su Miktarı", "Depo Miktarı" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -80,9 +80,9 @@ public class GuideGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 434, Short.MAX_VALUE)
                     .addComponent(jScrollPane2))
-                .addGap(125, 125, 125))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         pack();
@@ -135,6 +135,12 @@ public class GuideGUI extends javax.swing.JFrame {
         }
         else if(secilen.equals("Isıl İletkenlik Katsayısı")){
             bilgiText.setText("Isı iletim katsayısı, bir maddenin bir metre uzaklığındaki bir noktasının sıcaklığını, 1 Kelvin artırmak için gerekli güç değerine denir.");
+        }
+        else if(secilen.equals("Günlük Su Miktarı")){
+            bilgiText.setText("Bir kişinin günlük harcadığı su miktarıdır. TÜİK 2019 verilerine göre bu sayı günlük 217 litre yani 0.217 metreküptür.");
+        }
+        else if(secilen.equals("Depo Miktarı")){
+            bilgiText.setText("Depolar konut ve işyeri gibi mekanların günlük su ihtiyacını kesintisiz karşılamak için kullanılır. Bu sayı verilen kişi sayısının günlük su kullanımı ile çarpımıyla bulunur.");
         }
         
     }//GEN-LAST:event_jList1MouseClicked

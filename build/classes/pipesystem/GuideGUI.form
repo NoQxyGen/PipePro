@@ -47,10 +47,10 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jScrollPane1" pref="390" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="434" max="32767" attributes="0"/>
                   <Component id="jScrollPane2" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+              <EmptySpace pref="81" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -69,7 +69,7 @@
               <Font name="Segoe UI" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="13">
+              <StringArray count="15">
                 <StringItem index="0" value="Genle&#x15f;me Katsay&#x131;s&#x131;"/>
                 <StringItem index="1" value="S&#x131;cakl&#x131;k Fark&#x131;"/>
                 <StringItem index="2" value="Hat Uzunlu&#x11f;u"/>
@@ -83,6 +83,8 @@
                 <StringItem index="10" value="Ak&#x131;&#x15f;kan S&#x131;cakl&#x131;&#x11f;&#x131;"/>
                 <StringItem index="11" value="D&#x131;&#x15f; Ortam S&#x131;cakl&#x131;&#x11f;&#x131;"/>
                 <StringItem index="12" value="Is&#x131;l &#x130;letkenlik Katsay&#x131;s&#x131;"/>
+                <StringItem index="13" value="G&#xfc;nl&#xfc;k Su Miktar&#x131;"/>
+                <StringItem index="14" value="Depo Miktar&#x131;"/>
               </StringArray>
             </Property>
           </Properties>

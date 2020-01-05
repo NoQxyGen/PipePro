@@ -20,6 +20,9 @@ public class MainScreen extends javax.swing.JFrame {
      */
     public MainScreen() {
         initComponents();
+        vardiya_saati.setVisible(false);
+        sonuc_atik_su_saat.setVisible(false);
+        vardiya_saati.setText("1");
     }
 
     /**
@@ -33,7 +36,7 @@ public class MainScreen extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
-        genlesmeKatsayisiButton = new javax.swing.JButton();
+        rehber1 = new javax.swing.JButton();
         genlesmeHesapla = new javax.swing.JButton();
         jTextField7 = new javax.swing.JTextField();
         hatUzunlugu = new javax.swing.JTextField();
@@ -61,7 +64,7 @@ public class MainScreen extends javax.swing.JFrame {
         sicaklik_farki = new javax.swing.JTextPane();
         jScrollPane11 = new javax.swing.JScrollPane();
         debi = new javax.swing.JTextPane();
-        genlesmeKatsayisiButton1 = new javax.swing.JButton();
+        rehber2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
@@ -82,7 +85,7 @@ public class MainScreen extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         basincDusumu = new javax.swing.JTextPane();
         jTextField10 = new javax.swing.JTextField();
-        genlesmeKatsayisiButton2 = new javax.swing.JButton();
+        rehber3 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
@@ -97,11 +100,29 @@ public class MainScreen extends javax.swing.JFrame {
         jTextField19 = new javax.swing.JTextField();
         jScrollPane17 = new javax.swing.JScrollPane();
         isi_kaybi = new javax.swing.JTextPane();
-        genlesmeKatsayisiButton3 = new javax.swing.JButton();
+        rehber4 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
-        genlesmeKatsayisiButton4 = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        genlesmeKatsayisiButton5 = new javax.swing.JButton();
+        rehber5 = new javax.swing.JButton();
+        jTextField20 = new javax.swing.JTextField();
+        jTextField21 = new javax.swing.JTextField();
+        jTextField22 = new javax.swing.JTextField();
+        kisi_sayisi = new javax.swing.JSpinner();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        vardiya_saati = new javax.swing.JTextPane();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        gunluk_su_miktari = new javax.swing.JTextPane();
+        tuik_button = new javax.swing.JButton();
+        atik_su_hesap = new javax.swing.JButton();
+        jScrollPane18 = new javax.swing.JScrollPane();
+        sonuc_atik_su_gun = new javax.swing.JTextPane();
+        jTextField23 = new javax.swing.JTextField();
+        jTextField24 = new javax.swing.JTextField();
+        jScrollPane19 = new javax.swing.JScrollPane();
+        sonuc_atik_su_saat = new javax.swing.JTextPane();
+        is_yeri = new javax.swing.JCheckBox();
+        jTextField25 = new javax.swing.JTextField();
+        jScrollPane20 = new javax.swing.JScrollPane();
+        depo_miktari = new javax.swing.JTextPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -116,10 +137,10 @@ public class MainScreen extends javax.swing.JFrame {
         jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        genlesmeKatsayisiButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        genlesmeKatsayisiButton.addActionListener(new java.awt.event.ActionListener() {
+        rehber1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        rehber1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genlesmeKatsayisiButtonActionPerformed(evt);
+                rehber1ActionPerformed(evt);
             }
         });
 
@@ -133,6 +154,7 @@ public class MainScreen extends javax.swing.JFrame {
 
         jTextField7.setEditable(false);
         jTextField7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField7.setText(" Genleşme Miktarı (m):");
         jTextField7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
@@ -168,11 +190,13 @@ public class MainScreen extends javax.swing.JFrame {
 
         jTextField5.setEditable(false);
         jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField5.setText(" Hat Uzunluğu (m):");
         jTextField5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jTextField6.setEditable(false);
         jTextField6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField6.setText(" Sıcaklık Farkı (°C):");
         jTextField6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -186,6 +210,7 @@ public class MainScreen extends javax.swing.JFrame {
 
         jTextField2.setEditable(false);
         jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField2.setText(" Genleşme Katsayısı:");
         jTextField2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -196,7 +221,7 @@ public class MainScreen extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(genlesmeKatsayisiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rehber1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(393, 393, 393)
                         .addComponent(genlesmeMiktari, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -227,7 +252,7 @@ public class MainScreen extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rehber1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -329,10 +354,10 @@ public class MainScreen extends javax.swing.JFrame {
         debi.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jScrollPane11.setViewportView(debi);
 
-        genlesmeKatsayisiButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        genlesmeKatsayisiButton1.addActionListener(new java.awt.event.ActionListener() {
+        rehber2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        rehber2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genlesmeKatsayisiButton1ActionPerformed(evt);
+                rehber2ActionPerformed(evt);
             }
         });
 
@@ -343,7 +368,7 @@ public class MainScreen extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(genlesmeKatsayisiButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rehber2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextField11)
@@ -367,7 +392,7 @@ public class MainScreen extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rehber2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane7)
@@ -464,13 +489,14 @@ public class MainScreen extends javax.swing.JFrame {
 
         jTextField10.setEditable(false);
         jTextField10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField10.setText("Basınç Düşümü (N/m2):");
         jTextField10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        genlesmeKatsayisiButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        genlesmeKatsayisiButton2.addActionListener(new java.awt.event.ActionListener() {
+        rehber3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        rehber3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genlesmeKatsayisiButton2ActionPerformed(evt);
+                rehber3ActionPerformed(evt);
             }
         });
 
@@ -481,7 +507,7 @@ public class MainScreen extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(genlesmeKatsayisiButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rehber3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(242, 242, 242)
                         .addComponent(capHesapla, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -517,7 +543,7 @@ public class MainScreen extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rehber3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -603,10 +629,10 @@ public class MainScreen extends javax.swing.JFrame {
         isi_kaybi.setPreferredSize(new java.awt.Dimension(6, 20));
         jScrollPane17.setViewportView(isi_kaybi);
 
-        genlesmeKatsayisiButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        genlesmeKatsayisiButton3.addActionListener(new java.awt.event.ActionListener() {
+        rehber4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        rehber4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genlesmeKatsayisiButton3ActionPerformed(evt);
+                rehber4ActionPerformed(evt);
             }
         });
 
@@ -617,7 +643,7 @@ public class MainScreen extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(genlesmeKatsayisiButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rehber4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(46, 46, 46)
@@ -645,7 +671,7 @@ public class MainScreen extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rehber4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -668,57 +694,176 @@ public class MainScreen extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Isı Kaybı Hesabı", jPanel3);
 
-        genlesmeKatsayisiButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        genlesmeKatsayisiButton4.addActionListener(new java.awt.event.ActionListener() {
+        rehber5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
+        rehber5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genlesmeKatsayisiButton4ActionPerformed(evt);
+                rehber5ActionPerformed(evt);
             }
         });
+
+        jTextField20.setEditable(false);
+        jTextField20.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField20.setText("Depo Miktarı (L):");
+        jTextField20.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField21.setEditable(false);
+        jTextField21.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField21.setText("Kişi Sayısı:");
+        jTextField21.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField22.setEditable(false);
+        jTextField22.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField22.setText("Günlük Su Miktarı (m³):");
+        jTextField22.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        kisi_sayisi.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        vardiya_saati.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jScrollPane13.setViewportView(vardiya_saati);
+
+        gunluk_su_miktari.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jScrollPane14.setViewportView(gunluk_su_miktari);
+
+        tuik_button.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tuik_button.setText("TÜİK Standartı");
+        tuik_button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tuik_buttonMouseClicked(evt);
+            }
+        });
+        tuik_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tuik_buttonActionPerformed(evt);
+            }
+        });
+
+        atik_su_hesap.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        atik_su_hesap.setText("Hesapla");
+        atik_su_hesap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atik_su_hesapActionPerformed(evt);
+            }
+        });
+
+        sonuc_atik_su_gun.setEditable(false);
+        sonuc_atik_su_gun.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jScrollPane18.setViewportView(sonuc_atik_su_gun);
+
+        jTextField23.setEditable(false);
+        jTextField23.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField23.setText("Günlük Vardiya Saati:");
+        jTextField23.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField24.setEditable(false);
+        jTextField24.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField24.setText("Atık Su Miktarı m³/Saat");
+        jTextField24.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        sonuc_atik_su_saat.setEditable(false);
+        sonuc_atik_su_saat.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jScrollPane19.setViewportView(sonuc_atik_su_saat);
+
+        is_yeri.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        is_yeri.setText("İş Yeri");
+        is_yeri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                is_yeriActionPerformed(evt);
+            }
+        });
+
+        jTextField25.setEditable(false);
+        jTextField25.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextField25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField25.setText("Atık Su Miktarı m³/Gün");
+        jTextField25.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        depo_miktari.setEditable(false);
+        depo_miktari.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jScrollPane20.setViewportView(depo_miktari);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(704, Short.MAX_VALUE))
+                .addGap(12, 12, 12)
+                .addComponent(rehber5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(kisi_sayisi, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(tuik_button, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(is_yeri, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(270, 270, 270)
+                .addComponent(atik_su_hesap, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(354, Short.MAX_VALUE))
+                .addGap(13, 13, 13)
+                .addComponent(rehber5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kisi_sayisi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tuik_button, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(is_yeri, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addComponent(atik_su_hesap, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         jTabbedPane1.addTab("Atık Su Hesabı", jPanel5);
-
-        genlesmeKatsayisiButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pipesystem/questionmark25x25.jpg"))); // NOI18N
-        genlesmeKatsayisiButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genlesmeKatsayisiButton5ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(704, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(genlesmeKatsayisiButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(354, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.addTab("Depo Hesabı", jPanel6);
 
         jMenu1.setText("Dosya");
         jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -782,35 +927,212 @@ public class MainScreen extends javax.swing.JFrame {
         new GuideGUI().setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void genlesmeKatsayisiButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButtonActionPerformed
-        // TODO add your handling code here:
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_genlesmeKatsayisiButtonActionPerformed
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        new About().setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
-    private void sicaklikFarkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sicaklikFarkiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sicaklikFarkiActionPerformed
+    private void is_yeriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_is_yeriActionPerformed
 
-    private void genlesmeKatsayisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_genlesmeKatsayisiActionPerformed
+        if(is_yeri.isSelected()){
+            vardiya_saati.setVisible(true);
+            sonuc_atik_su_saat.setVisible(true);
+        }
+        else{
+            vardiya_saati.setVisible(false);
+            sonuc_atik_su_saat.setVisible(false);
 
-    private void genlesmeHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeHesaplaActionPerformed
-        float sonuc = Float.parseFloat(genlesmeKatsayisi.getText())*Float.parseFloat(sicaklikFarki.getText())*Float.parseFloat(hatUzunlugu.getText());
-        String sonuc1 = Float.toString(sonuc);
-        genlesmeMiktari.setText(sonuc1);
+        }
+    }//GEN-LAST:event_is_yeriActionPerformed
+
+    private void atik_su_hesapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atik_su_hesapActionPerformed
+
+        float sonuc8 = Float.parseFloat(kisi_sayisi.getValue().toString()) * Float.parseFloat(gunluk_su_miktari.getText());
+        float sonuc10 = sonuc8/Float.parseFloat(vardiya_saati.getText());
+        float sonuc12 = sonuc8*1000;
+
+        String sonuc11 = Float.toString(sonuc10);
+        String sonuc9 = Float.toString(sonuc8);
+        String sonuc13 = Float.toString(sonuc12);
+        sonuc_atik_su_gun.setText(sonuc9);
+        sonuc_atik_su_saat.setText(sonuc11);
+        depo_miktari.setText(sonuc13);
+
         try {
             FileWriter writer = new FileWriter("sonuc.txt", true);
-            writer.write("Genlesme Miktarı Sonucu: " + sonuc1 + " m");
+            writer.write("Kişi Sayısı: " + kisi_sayisi.getValue().toString());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Günlük Su Miktarı: "+ gunluk_su_miktari.getText());
+            writer.write(System.getProperty("line.separator"));
+            if(is_yeri.isSelected()){
+                writer.write("Vardiya Saati: "+ vardiya_saati.getText());
+                writer.write(System.getProperty("line.separator"));
+            }
+            
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Atık Su miktarı: " + sonuc9 + " m³/Gün");
+            writer.write(System.getProperty("line.separator"));
+            if(is_yeri.isSelected()){
+                writer.write("Atık Su miktarı: " + sonuc11 + " m³/Saat");
+                writer.write(System.getProperty("line.separator"));
+            }
+            writer.write("----------------------------------------------");
             writer.write(System.getProperty("line.separator"));
             writer.close();
-        } 
-        
+        }
+
         catch (Exception e) {
-            
+
             JOptionPane.showMessageDialog(rootPane, "Error");
         }
-    }//GEN-LAST:event_genlesmeHesaplaActionPerformed
+    }//GEN-LAST:event_atik_su_hesapActionPerformed
+
+    private void tuik_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tuik_buttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tuik_buttonActionPerformed
+
+    private void tuik_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tuik_buttonMouseClicked
+
+        gunluk_su_miktari.setText("0.217");
+    }//GEN-LAST:event_tuik_buttonMouseClicked
+
+    private void rehber5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rehber5ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_rehber5ActionPerformed
+
+    private void rehber4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rehber4ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_rehber4ActionPerformed
+
+    private void isi_kaybikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isi_kaybikActionPerformed
+        float sonuc6 = Float.parseFloat(iletken_katsayi.getText())* (Float.parseFloat(akiskan.getText())-Float.parseFloat(dis_ortam.getText()));
+        String sonuc7 = Float.toString(sonuc6);
+        isi_kaybi.setText(sonuc7);
+
+        try {
+            FileWriter writer = new FileWriter("sonuc.txt", true);
+            writer.write("İletken Katsayısı: " + iletken_katsayi.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Akışkan Sıcaklığı: " + akiskan.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Dış Ortam Sıcaklığı: " + dis_ortam.getText());
+            writer.write(System.getProperty("line.separator"));
+            
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Oluşan Isı Kaybı " + sonuc6 + " W / m");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
+            writer.close();
+        }
+
+        catch (Exception e) {
+
+            JOptionPane.showMessageDialog(rootPane, "Error");
+        }
+    }//GEN-LAST:event_isi_kaybikActionPerformed
+
+    private void dis_ortamKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_dis_ortamKeyTyped
+        if(!Character.isDigit(evt.getKeyChar())){
+            evt.consume();
+        }
+    }//GEN-LAST:event_dis_ortamKeyTyped
+
+    private void rehber3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rehber3ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_rehber3ActionPerformed
+
+    private void capHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_capHesaplaActionPerformed
+        float sonuc2 = Float.parseFloat(surtunmeKatsayisi.getText())*Float.parseFloat(hattinUzunlugu2.getText())
+        *Float.parseFloat(akiskanHizi.getText())*Float.parseFloat(akiskanHizi.getText())*Float.parseFloat(ozkutle.getText())/Float.parseFloat(icCap.getText())*2;
+        String sonuc3 = Float.toString(sonuc2);
+        basincDusumu.setText(sonuc3);
+
+        try {
+            FileWriter writer = new FileWriter("sonuc.txt", true);
+            writer.write("Sürtünme Katsayısı: "+ surtunmeKatsayisi.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Hattın Uzunluğu: "+ hattinUzunlugu2.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Akışkan Hızı: "+ akiskanHizi.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Öz kütle: "+ ozkutle.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("İç Çap: "+ icCap.getText());
+            writer.write(System.getProperty("line.separator"));
+            
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Basınc Düsümü Sonucu: " + sonuc3 + " N/m2");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
+            writer.close();
+        }
+
+        catch (Exception e) {
+
+            JOptionPane.showMessageDialog(rootPane, "Error");
+        }
+    }//GEN-LAST:event_capHesaplaActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void rehber2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rehber2ActionPerformed
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_rehber2ActionPerformed
+
+    private void Debi_hesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Debi_hesaplaActionPerformed
+        float sonuc4 = Float.parseFloat(isi_ihtiyaci.getText())/(Float.parseFloat(özkütle.getText())*Float.parseFloat(özgül_isi.getText())*Float.parseFloat(sicaklik_farki.getText()));
+        String sonuc5 = Float.toString(sonuc4);
+        debi.setText(sonuc5);
+
+        try {
+            FileWriter writer = new FileWriter("sonuc.txt", true);
+            writer.write("Isı İhtiyacı: " + isi_ihtiyaci.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Özgül Isı: " + özgül_isi.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Sıcaklık Farkı: " + sicaklik_farki.getText());
+            writer.write(System.getProperty("line.separator"));
+            
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Sıvının Debisi: " + sonuc4 + " m³/s");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
+            writer.close();
+        }
+
+        catch (Exception e) {
+
+            JOptionPane.showMessageDialog(rootPane, "Error");
+        }
+    }//GEN-LAST:event_Debi_hesaplaActionPerformed
+
+    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField16ActionPerformed
+
+    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField15ActionPerformed
+
+    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField12ActionPerformed
+
+    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField11ActionPerformed
 
     private void comboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox1ActionPerformed
         if(comboBox1.getSelectedItem().toString()=="Demir"){
@@ -839,105 +1161,42 @@ public class MainScreen extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_comboBox1ActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
     private void genlesmeMiktariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeMiktariActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_genlesmeMiktariActionPerformed
 
-    private void capHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_capHesaplaActionPerformed
-        float sonuc2 = Float.parseFloat(surtunmeKatsayisi.getText())*Float.parseFloat(hattinUzunlugu2.getText())
-        *Float.parseFloat(akiskanHizi.getText())*Float.parseFloat(akiskanHizi.getText())*Float.parseFloat(ozkutle.getText())/Float.parseFloat(icCap.getText())*2;
-        String sonuc3 = Float.toString(sonuc2);
-        basincDusumu.setText(sonuc3);
-        
+    private void genlesmeKatsayisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_genlesmeKatsayisiActionPerformed
+
+    private void sicaklikFarkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sicaklikFarkiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sicaklikFarkiActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void genlesmeHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeHesaplaActionPerformed
+        float sonuc = Float.parseFloat(genlesmeKatsayisi.getText())*Float.parseFloat(sicaklikFarki.getText())*Float.parseFloat(hatUzunlugu.getText());
+        String sonuc1 = Float.toString(sonuc);
+        genlesmeMiktari.setText(sonuc1);
         try {
             FileWriter writer = new FileWriter("sonuc.txt", true);
-            writer.write("Basınc Düsümü Sonucu: " + sonuc3 + " N/m2");
+            writer.write("Genlesme Katsayısı: " + genlesmeKatsayisi.getText());
             writer.write(System.getProperty("line.separator"));
-            writer.close();
-        } 
-        
-        catch (Exception e) {
+            writer.write("Sıcaklık Farkı: " + sicaklikFarki.getText());
+            writer.write(System.getProperty("line.separator"));
+            writer.write("Hat Uzunluğu: " + hatUzunlugu.getText());
+            writer.write(System.getProperty("line.separator"));
             
-            JOptionPane.showMessageDialog(rootPane, "Error");
-        }
-        
-    }//GEN-LAST:event_capHesaplaActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
-
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
-
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
-
-    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField16ActionPerformed
-
-    private void Debi_hesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Debi_hesaplaActionPerformed
-        float sonuc4 = Float.parseFloat(isi_ihtiyaci.getText())/(Float.parseFloat(özkütle.getText())*Float.parseFloat(özgül_isi.getText())*Float.parseFloat(sicaklik_farki.getText()));
-        String sonuc5 = Float.toString(sonuc4);
-        debi.setText(sonuc5);
-        
-        try {
-            FileWriter writer = new FileWriter("sonuc.txt", true);
-            writer.write("Sıvının Debisi: " + sonuc4 + " m³/s");
+            writer.write("----------------------------------------------");
             writer.write(System.getProperty("line.separator"));
-            writer.close();
-        } 
-        
-        catch (Exception e) {
+            writer.write("Genlesme Miktarı Sonucu: " + sonuc1 + " m");
+            writer.write(System.getProperty("line.separator"));
+            writer.write("----------------------------------------------");
+            writer.write(System.getProperty("line.separator"));
             
-            JOptionPane.showMessageDialog(rootPane, "Error");
-        }
-    }//GEN-LAST:event_Debi_hesaplaActionPerformed
-
-    private void genlesmeKatsayisiButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton1ActionPerformed
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_genlesmeKatsayisiButton1ActionPerformed
-
-    private void genlesmeKatsayisiButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton2ActionPerformed
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_genlesmeKatsayisiButton2ActionPerformed
-
-    private void genlesmeKatsayisiButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton4ActionPerformed
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_genlesmeKatsayisiButton4ActionPerformed
-
-    private void genlesmeKatsayisiButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton5ActionPerformed
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_genlesmeKatsayisiButton5ActionPerformed
-
-    private void genlesmeKatsayisiButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genlesmeKatsayisiButton3ActionPerformed
-        new GuideGUI().setVisible(true);
-    }//GEN-LAST:event_genlesmeKatsayisiButton3ActionPerformed
-
-    private void isi_kaybikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isi_kaybikActionPerformed
-        float sonuc6 = Float.parseFloat(iletken_katsayi.getText())* (Float.parseFloat(akiskan.getText())-Float.parseFloat(dis_ortam.getText()));
-        String sonuc7 = Float.toString(sonuc6);
-        isi_kaybi.setText(sonuc7);
-
-        try {
-            FileWriter writer = new FileWriter("sonuc.txt", true);
-            writer.write("Oluşan Isı Kaybı " + sonuc6 + " W / m");
-            writer.write(System.getProperty("line.separator"));
             writer.close();
         }
 
@@ -945,17 +1204,12 @@ public class MainScreen extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(rootPane, "Error");
         }
-    }//GEN-LAST:event_isi_kaybikActionPerformed
+    }//GEN-LAST:event_genlesmeHesaplaActionPerformed
 
-    private void dis_ortamKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_dis_ortamKeyTyped
-        if(!Character.isDigit(evt.getKeyChar())){
-            evt.consume();
-        }
-    }//GEN-LAST:event_dis_ortamKeyTyped
-
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        new About().setVisible(true);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    private void rehber1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rehber1ActionPerformed
+        // TODO add your handling code here:
+        new GuideGUI().setVisible(true);
+    }//GEN-LAST:event_rehber1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -996,24 +1250,22 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JButton Debi_hesapla;
     private javax.swing.JTextPane akiskan;
     private javax.swing.JTextPane akiskanHizi;
+    private javax.swing.JButton atik_su_hesap;
     private javax.swing.JTextPane basincDusumu;
     private javax.swing.JButton capHesapla;
     private javax.swing.JComboBox<String> comboBox1;
     private javax.swing.JTextPane debi;
+    private javax.swing.JTextPane depo_miktari;
     private javax.swing.JTextPane dis_ortam;
     private javax.swing.JButton genlesmeHesapla;
     private javax.swing.JTextField genlesmeKatsayisi;
-    private javax.swing.JButton genlesmeKatsayisiButton;
-    private javax.swing.JButton genlesmeKatsayisiButton1;
-    private javax.swing.JButton genlesmeKatsayisiButton2;
-    private javax.swing.JButton genlesmeKatsayisiButton3;
-    private javax.swing.JButton genlesmeKatsayisiButton4;
-    private javax.swing.JButton genlesmeKatsayisiButton5;
     private javax.swing.JTextField genlesmeMiktari;
+    private javax.swing.JTextPane gunluk_su_miktari;
     private javax.swing.JTextField hatUzunlugu;
     private javax.swing.JTextPane hattinUzunlugu2;
     private javax.swing.JTextPane icCap;
     private javax.swing.JTextPane iletken_katsayi;
+    private javax.swing.JCheckBox is_yeri;
     private javax.swing.JTextPane isi_ihtiyaci;
     private javax.swing.JTextPane isi_kaybi;
     private javax.swing.JButton isi_kaybik;
@@ -1028,15 +1280,19 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
+    private javax.swing.JScrollPane jScrollPane18;
+    private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
@@ -1057,6 +1313,12 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField25;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
@@ -1064,10 +1326,20 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JSpinner kisi_sayisi;
     private javax.swing.JTextPane ozkutle;
+    private javax.swing.JButton rehber1;
+    private javax.swing.JButton rehber2;
+    private javax.swing.JButton rehber3;
+    private javax.swing.JButton rehber4;
+    private javax.swing.JButton rehber5;
     private javax.swing.JTextField sicaklikFarki;
     private javax.swing.JTextPane sicaklik_farki;
+    private javax.swing.JTextPane sonuc_atik_su_gun;
+    private javax.swing.JTextPane sonuc_atik_su_saat;
     private javax.swing.JTextPane surtunmeKatsayisi;
+    private javax.swing.JButton tuik_button;
+    private javax.swing.JTextPane vardiya_saati;
     private javax.swing.JTextPane özgül_isi;
     private javax.swing.JTextPane özkütle;
     // End of variables declaration//GEN-END:variables
